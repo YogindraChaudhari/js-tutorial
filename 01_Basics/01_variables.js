@@ -6,7 +6,7 @@ let accountState
 
 console.table([accountId, accountEmail, accountPassword, accountCity])
 
-/*Prefer not to use var because of issue block scope and functional scope*/
+/*Prefer not to use var because of issue in block scope and functional scope*/
 
 // accountId = 2
 accountEmail = "me@gmail.com"
