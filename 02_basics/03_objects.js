@@ -1,8 +1,10 @@
 // Objects can be declared as literals or constructors
 // singleton
 // Object.create
-const mySym = Symbol("key1")
+
+
 // object literals
+const mySym = Symbol("key1")
 const JsUser = {
     name: "username",
     "full name": "username",
