@@ -48,3 +48,15 @@ console.log(Object.keys(tinderUser))//will give array as output
 console.log(Object.values(tinderUser))//will give array as output
 console.log(Object.entries(tinderUser))//will give key-value paired array
 console.log(tinderUser.hasOwnProperty('isLoggedIn'))
+
+const course = {
+    coursename: "javascript",
+    price: "999",
+    courseInstructor: "Teacherme"
+}
+
+// course.courseInstructor //normal way
+const {courseInstructor} = course //another way
+const {courseInstructor: instructor} = course //destructure into another name
+// console.log(courseInstructor)
+console.log(instructor)
