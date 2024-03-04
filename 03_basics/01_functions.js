@@ -30,7 +30,7 @@ const res = addTwoNum(3, 6)
 function loginUserMessage(username){
     return `${username} just logged in`
 }
-console.log(loginUserMessage("Cammavinga"))
+// console.log(loginUserMessage("Cammavinga"))
 
 
 function loginUserMessage2(username){
@@ -40,7 +40,7 @@ function loginUserMessage2(username){
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage2())
+// console.log(loginUserMessage2())
 
 function loginUserMessage3(username = "sam"){
     if(username === undefined){
@@ -49,5 +49,34 @@ function loginUserMessage3(username = "sam"){
     }
     return `${username} just logged in`
 }
-console.log(loginUserMessage3())
-console.log(loginUserMessage3("Sam is Override and"))
+// console.log(loginUserMessage3())
+// console.log(loginUserMessage3("Sam is Override and"))
+
+// spread , rest operator
+function calculateCartPrice(val1, val2, ...num1){
+    return num1
+}
+console.log(calculateCartPrice(200, 400, 500, 2000))
+
+
+//passing object in functions
+
+const user = {
+    username: "Camavinga",
+    price: 199
+}
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`)
+}
+handleObject(user)
+handleObject({
+    username: "Jude",
+    price: 199
+})//another way of calling function with objects
+
+const myNewArray = [200, 300, 400]
+function returnSecondValue(getArray){
+    return getArray[1]
+}
+console.log(returnSecondValue(myNewArray))
+console.log(returnSecondValue([200, 500, 600]))
