@@ -3,7 +3,7 @@ const dc_heros = ["Superman", 'Flash', "Batman"]
 
 // marvel_heros.push(dc_heros)
 // console.log(marvel_heros)
-// Note: In javascript array take array as a data, where array itself is a single element
+// Note: In javascript, array take array as a data, where array itself is a single element
 // [ 'Thor', 'Ironman', 'Spiderman', [ 'Superman', 'Flash', 'Batman' ] ]
 // console.log(marvel_heros[3][1])
 const allHeros = marvel_heros.concat(dc_heros)
