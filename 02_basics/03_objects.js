@@ -7,7 +7,7 @@
 const mySym = Symbol("key1")
 const JsUser = {
     name: "username",
-    "full name": "username",
+    "full name": "user username",
     [mySym]: "mykey1",
     age: 18,
     location: "Mumbai",
@@ -25,7 +25,7 @@ console.log(JsUser[mySym])//actual declaration while call
 
 JsUser.email = "user@email.com"
 console.log(JsUser)
-// Object.freeze(JsUser)
+// Object.freeze(JsUser) //It will restrict the object to take new values, arguments
 JsUser.email = "user@yahoo.com"
 console.log(JsUser)
 
