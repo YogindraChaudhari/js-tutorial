@@ -17,3 +17,6 @@ execution phase =>
 3. Execution Phase (for each Function 
     => (new environment + execution thread) => (1. Memory Phase
                                             2. Execution Phase) => Delete)
+
+Call Stack:
+ Follows FILO order
