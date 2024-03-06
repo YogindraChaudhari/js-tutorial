@@ -1,0 +1,22 @@
+Javascript Execution Context:
+Code => Global Execution(this)
+
+Types of Execution Context:
+1.Global Execution Context
+2.Function Execution Context
+3.Eval Execution Context(property of global object)
+
+Working of Javascript:
+code => 1.Memory Creation Phase
+        2.Execution Phase
+
+
+execution phase => 
+1. Global execution (this)
+2. Memory phase
+3. Execution Phase (for each Function 
+    => (new environment + execution thread) => (1. Memory Phase
+                                            2. Execution Phase) => Delete)
+
+Call Stack:
+ Follows FILO order
