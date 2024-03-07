@@ -1,4 +1,4 @@
-// for each
+// for each loop
 const coding = ['js', 'ruby', 'cpp', 'c', 'py']
 coding.forEach( function (item) {
     console.log(`Extensions are ${item}`)
