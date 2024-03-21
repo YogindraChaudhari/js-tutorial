@@ -12,21 +12,37 @@
 </body>
 <script>
     
-    const sayDate = function(str){
-        console.log(str, Date.now())
+    // const sayDate = function(str){
+    //     console.log(str, Date.now())
+    // }
+
+    // const intervalId = function(){
+    //     setInterval(sayDate, 1000, "Roll No: ")
+    // }
+
+    // clearInterval(intervalId)
+    
+
+
+
+    let button
+
+    const startbtn = function(){
+        if(!button){
+                button = setInterval(() => {
+                console.log(Date.now())
+            }, 1000)
+        }
+        
     }
 
-    // const intervalId = setInterval(sayDate, 1000, "Roll No: ")
+    const stopbtn = function(){
+        clearInterval(button)
+        button = null
+    }
+    const onclick = document.getElementById('start').addEventListener('click', startbtn)
 
-    const clickOnStart = document.querySelector('#start').addEventListener('click', () => {
-        // setInterval(sayDate, 1000)
-        
-    }) 
-    
-    const clickOnStop = document.querySelector('#stop').addEventListener('click', () => {
-        clearInterval(clickOnStart)
-    })
-    // clearInterval(intervalId)
+    const onstop = document.getElementById('stop').addEventListener('click', stopbtn) 
 
 
 </script>
