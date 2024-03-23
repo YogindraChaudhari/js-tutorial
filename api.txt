@@ -1,0 +1,8 @@
+api.github.com/users/YogindraChaudhari
+randomuser.me
+
+json formatter
+
+API sends response in string type not in object
+for that use:
+JSON.parse(this.responseText)
